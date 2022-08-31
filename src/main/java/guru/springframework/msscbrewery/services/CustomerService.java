@@ -2,16 +2,15 @@ package guru.springframework.msscbrewery.services;
 
 import java.util.UUID;
 import org.springframework.stereotype.Service;
-import guru.springframework.msscbrewery.web.model.CustomerDTO;
-
+import guru.springframework.msscbrewery.web.model.CustomerDto;
 
 public interface CustomerService {
 
-    public CustomerDTO getCustomer(UUID uuid);
+    public CustomerDto getCustomer(UUID uuid);
 
-    CustomerDTO save(CustomerDTO customerDTO);
+    CustomerDto save(CustomerDto customerDTO);
 
-    void update(UUID customerId, CustomerDTO customerDTO);
+    void update(UUID customerId, CustomerDto customerDTO);
 
     void delete(UUID customerId);
 }

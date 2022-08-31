@@ -8,14 +8,12 @@ import lombok.NoArgsConstructor;
 
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.Size;
-import java.util.UUID;
-
 
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder
-public class CustomerDTO {
+public class CustomerDto {
 
     private UUID uuid;
 
